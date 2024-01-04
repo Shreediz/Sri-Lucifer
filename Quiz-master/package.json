@@ -1,0 +1,38 @@
+{
+  "name": "quiz",
+  "version": "1.0.0",
+  "description": "",
+
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-pino-logger": "^4.0.0",
+    "http-proxy-middleware": "^0.20.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "mysql2": "^1.6.5",
+    "nodemailer": "^6.2.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "pino-colada": "^1.4.5",
+    "supertest": "^4.0.2",
+    "validator": "^11.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "env-cmd": "^10.0.1",
+    "nodemon": "^1.19.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "start": "env-cmd -f ./env/prod.env node server.js",
+    "server": "env-cmd -f ./env/dev.env nodemon server.js | pino-colada",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server \" \"npm run client\" ",
+    "test": "env-cmd -f ./env/test.env jest --watch --runInBand"
+  },
+  "author": "",
+  "license": "ISC"
+}

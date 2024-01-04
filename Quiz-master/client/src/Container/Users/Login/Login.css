@@ -1,0 +1,16 @@
+#login {
+  background: #ECEDF0;
+}
+.logo {
+  width: 70%;
+  height: auto;
+}
+.login__title {
+  position: relative;
+}
+.login__form {
+  border-top: 5px solid #0088CC;
+  border-top-left-radius: 5px;
+  padding:3rem;
+}
+

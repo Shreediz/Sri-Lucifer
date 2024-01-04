@@ -1,0 +1,26 @@
+#forgot {
+    background: #ECEDF0;
+  }
+  .logo {
+    width: 70%;
+    height: auto;
+  }
+  .forgot__title {
+    position: relative;
+  }
+  .forgot__form {
+    border-top: 5px solid #0088CC;
+    border-top-left-radius: 5px;
+    padding:3rem;
+  }
+  .title-fixed {
+    background: #0088CC;
+    padding:10px;
+    border-radius: 6px 6px 0 0;
+    color:white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+  }
+  
